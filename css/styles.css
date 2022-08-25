@@ -1,126 +1,153 @@
 /*===== GLOBAL ===== */
 :root {
     --body-background-color: #ffffff;
-    --body-text-color: #212121;
-    --blue-text-color: #2196f3;
+    --dark-text-color: #212121;
     --bright-text-color: #757575;
-    --team-background-color: #f5f4fa;
+    --blue-text-color: #2196f3;
     --footer-background-color: #2f303a;
-    --footer-text-color: #ffffff;
 }
 
 body {
-    color: var(--body-text-color);
-    background-color: var(--body-background-color);
+    color: var(--dark-text-color, #212121);
+    background-color: var(--body-background-color, #ffffff);
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
     width: 1600px;
 }
-
-/*===== HEADER/NAVIGATION ===== */
 
 .logo {
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1, 192;
+    letter-spacing: 0.03em;
     text-decoration: none;
 }
+
+.blue-text {
+    color: var(--blue-text-color);
+}
+
+/*===== END GLOBAL ===== */
+
+/*===== HEADER/NAVIGATION ===== */
 
 .black {
     color: black;
 }
 
-.text-blue {
-    color: var(--blue-text-color);
-}
-
-.link-nav {
+.nav-link {
     color: #212121;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1, 142;
     text-decoration: none;
-}
-
-.link-nav:hover,
-.link-nav:focus {
-    color: var(--blue-text-color);
-}
-
-.contact-nav {
-    color: var(--bright-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    text-decoration: none;
-}
-
-.contact-nav:hover,
-.contact-nav:focus {
-    color: var(--blue-text-color);
 }
 
 .active {
     color: var(--blue-text-color);
 }
 
-.slider {
-    background: #2f303a;
+.header-contact {
+    color: var(--bright-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1, 142;
+    text-decoration: none;
 }
 
-.slider-title {
-    color: #ffffff;
+.nav-link:hover,
+.nav-link:focus,
+.header-contact:hover,
+.header-contact:focus {
+    color: var(--blue-text-color);
+}
+
+/* ===== END HEADER ===== */
+
+/* ===== MAIN ===== */
+
+.main-header {
+    background-color: #2f303a;
+}
+
+.main-header-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
     text-align: center;
-}
-
-.slider-button {
-    background-color: #2196f3;
     color: #ffffff;
 }
 
-/* MAIN SECTION */
+.main-header-button {
+    background-color: #2196f3;
+    color: #ffffff;
+    cursor: pointer;
+}
 
 .main-title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1, 142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .main-text {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1, 714;
+    letter-spacing: 0.03em;
     color: var(--bright-text-color);
 }
 
 .section-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
-    color: var(--body-text-color);
+    line-height: 1, 166;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--dark-text-color);
 }
 
 .team-section {
-    background: var(--team-background-color);
+    background: #f5f4fa;
 }
 
 .team-title {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1, 1875;
+    letter-spacing: 0.03em;
+    color: var(--dark-text-color);
 }
 
 .team-description {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1, 1875;
+    letter-spacing: 0.03em;
     color: var(--bright-text-color);
 }
 
-/* FOOTER */
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-description {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--bright-text-color);
+}
+
+.filter-button {
+    cursor: pointer;
+}
+
+/* ===== END MAIN ===== */
+
+/* ===== FOOTER ===== */
 
 .white {
     color: #ffffff;
@@ -130,21 +157,23 @@ body {
     background: var(--footer-background-color);
 }
 
-.contact-footer {
-    font-weight: 400;
+.footer-address {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1, 714;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+.footer-contact {
+    font-size: 14px;
+    line-height: 1, 714;
+    letter-spacing: 0.03em;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.contact-footer:hover,
-.contact-footer:focus {
+.footer-contact:hover,
+.footer-contact:focus {
     color: var(--blue-text-color);
 }
-.address-footer {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: var(--footer-text-color);
-}
+/* ===== END FOOTER ===== */
